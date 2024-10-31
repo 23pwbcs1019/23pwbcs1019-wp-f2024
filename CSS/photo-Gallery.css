@@ -8,7 +8,7 @@ body {
     font-weight: bolder;
     color: white;
     
-    background-image: url('/IMAGES/photoG-bg.jpg');
+    background-image: url('../IMAGES/photoG-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
