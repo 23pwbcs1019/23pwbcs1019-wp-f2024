@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bolder;
+    color: white;
+    background-image: url('/IMAGES/indexbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1.8;
+}
+
+/* INDEX PAGE */
+div.header {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap; /* Allows the navbar to wrap */
+    width: 100%;
+    padding: 2vh 2vw;
+}
+
+/* Mid BOX FOR NAVBAR */
+.mid {
+    display: block;
+    margin: 2vh auto;
+    width: 80%;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1.5vw; /* Smaller gap for a tighter wrap */
+    list-style-type: none;
+    padding: 0 1vw;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh 1.5vw;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 1.3vw; 
+}
+
+.navbar li a:active,
+.navbar li a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+/* Left BOX FOR LOGO */
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 4vw;
+    top: 1vh;
+}
+
+.left img {
+    width: 7vw;
+    padding-left: 1vw;
+    background-color: transparent;
+    border-radius: 1vw;
+}
+
+.left div {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    padding-left: 1.5vw;
+    font-size: 1.3vw;
+
+}
+.left div::first-letter {
+    font-size: 1.06rem;
+    font-weight: bolder;
+    color: #4e72e2;
+}
+
+.content {
+    margin-top: 15vh;
+    margin-left: 2vw;
+    padding: 0;
+}
+
+#content2 {
+    margin-top: 5vh;
+}
+
+.content .titles {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    margin-top: 4vh; 
+    margin-left: 20vw;
+}
+div.titleheadings{
+    margin-bottom: -3vh ;
+}
+
+.content h1, .content h3, .content h4, .content p {
+    margin: 0.2vh;
+}
+
+.content span {
+    color: #4e72e2;
+}
+
+.cont, #cont2 {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    border: 0.2vw solid white;
+    width: 90%;
+    background: radial-gradient(circle, #111111, #333333);
+    border-radius: 2vw;
+    margin: 3vh auto; 
+    padding: 2vw;
+    overflow: hidden;
+}
+
+.content img {
+    display: block;
+    margin: 2vh auto;
+    width: 15vw;
+    border-radius: 5vw;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #02113f;
+    margin-top: 4vh;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 6vh 0 0 0;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw; 
+}
+
+.footer-icons a {
+    text-align: center;
+    text-decoration: none;
+    padding: 1vh;
+    margin: 1vh;
+    border-radius: 50%;
+    height: 4vh;
+    width: 4vh;
+    justify-content: center;
+}
+
+.footer-nav {
+    margin: 3vh 0;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav ul li a {
+    color: white;
+    margin: 2.5vh;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.footer-nav ul li a:hover {
+    color: #333333;
+}
+
+.footer-bottom {
+    background-color: black;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: white;
+    width: 100%;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 0.5vw;
+}
+
+a.button {
+    display: inline-block; 
+    margin: 1.8vh;
+    border-radius: 1.7vh;
+    padding: 1vh 2vh;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    text-align: center;
+    background-color: black;
+    border: 0.1vw solid #000000;
+}
+
+a.button:hover {
+    color: gray;
+}
+
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0.8vh;
+    }
+
+    .content {
+        margin-left: 5vw;
+    }
+}

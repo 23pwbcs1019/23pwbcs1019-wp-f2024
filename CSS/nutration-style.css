@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bolder;
+    color: white;
+    
+    background: linear-gradient(120deg, #33a33e, #0b5206);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1.8;
+}
+
+/* INDEX PAGE */
+div.header {
+    background-color: #0d430d;
+    display: flex;
+    flex-wrap: wrap; /* Allows the navbar to wrap */
+    width: 100%;
+    padding: 2vh 2vw;
+}
+
+/* Mid BOX FOR NAVBAR */
+.mid {
+    display: block;
+    margin: 2vh auto;
+    width: 80%;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping */
+    justify-content: center;
+    gap: 1.5vw; /* Smaller gap for a tighter wrap */
+    list-style-type: none;
+    padding: 0 1vw;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh 1.5vw;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 1.3vw; /* Slightly smaller for easier wrapping */
+}
+
+.navbar li a:active,
+.navbar li a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+/* Left BOX FOR LOGO */
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 4vw;
+    top: 1vh;
+}
+
+.left img {
+    width: 7vw;
+    padding-left: 1vw;
+    background-color: transparent;
+    border-radius: 1vw;
+}
+
+.left div {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    padding-left: 1.5vw;
+    font-size: 1.3vw;
+
+}
+
+.left div::first-letter {
+    font-size: 1.3rem; /* Adjusted for responsiveness */
+    font-weight: bolder;
+    color: #4e72e2;
+}
+
+.page-heading {
+    margin: 70px auto 10px auto;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    background-color: #c0f2c0;
+    color: black;
+    border-radius: 40px;
+}
+
+.page-heading h1 {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 2rem; /* Responsive font size */
+    text-align: center;
+}
+
+.page-heading p {
+    font-size: 1.125rem; /* Responsive font size */
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.content1 {
+    margin: 10px auto 40px auto;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    background-color: #c0f2c0;
+    color: black;
+    border-radius: 40px;
+}
+
+.content1 h1 {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 2rem; /* Responsive font size */
+    text-align: center;
+}
+
+.content1 p {
+    font-size: 1.25rem; /* Responsive font size */
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.content1 ul li {
+    font-size: 1rem; /* Responsive font size */
+    padding: 5px;
+}
+
+.content1-image {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Set max-width for larger screens */
+    padding: 20px;
+    border-radius: 50px;
+    transition: transform 1s;
+}
+
+.content1-image:hover {
+    transform: scale(1.07);
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap */
+    background-color: #0d430d;
+    justify-content: center;
+}
+
+.content2, .content3 {
+    margin: 30px 8px 30px 12px;
+    width: 45%;
+    height: auto;
+    padding: 40px 20px;
+    background-color: #c0f2c0;
+    color: black;
+    border-radius: 40px;
+}
+
+.content2 h1, .content3 h1 {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 2rem; /* Responsive font size */
+    text-align: center;
+}
+
+.content2 p, .content3 p {
+    font-size: 1rem; /* Responsive font size */
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    text-align: center;
+    width: 35%;
+    margin: auto;
+}
+
+.content2 ul li, .content3 ul li {
+    font-size: 1rem; /* Responsive font size */
+    padding: 3px;
+}
+
+.content2-image, .content3-image {
+    width: 100%; /* Make image responsive */
+    max-width: 250px; /* Set max-width for larger screens */
+    padding: 10px;
+    border-radius: 50px;
+    transition: transform 1s;
+}
+
+.content2-image:hover, .content3-image:hover {
+    transform: scale(1.07);
+}
+
+.footer {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+a.button {
+    display: flex;
+    border: 1px solid #000000;
+    margin: 15px;
+    border-radius: 17px;
+    padding: 10px 20px;
+    font-size: 1.25rem; /* Responsive font size */
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0d430d;
+    text-align: center;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+a.button:hover {
+    color: gray;
+    transition: .5s;
+}
+
+#btn2 {
+    font-size: 1rem; /* Responsive font size */
+}
+
+
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+}
